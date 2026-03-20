@@ -1,3 +1,4 @@
 .env
 /drafts
 .DS_store
+/tmp
