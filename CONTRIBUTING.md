@@ -37,7 +37,14 @@ If a constant has been worked out exactly, this site may not be the most appropr
 1. **Fork the repository** and create a new branch.
 2. **Edit the relevant constant file**:
    - Update the bounds section with new values, with at least one citation or reference.
-3. **Submit a pull request**
+3. **Also update the corresponding cell of the table in [README.md](README.md)**, and add a line to its "Recent progress" section.  A pull request that improves a bound on a constant page but leaves the README showing the old value is the most common defect in submissions here.
+4. **Submit a pull request**
+
+## Recording bounds
+
+- **The bound tables are histories, not just leaderboards.**  Rows are listed in chronological order and superseded rows are kept, including bounds that are inferior to ones already recorded.  When several pull requests improve the same constant they will all append to the same table; they are merged in chronological order of the claims, with every row retained and the README cell updated once, to the best value.
+- **Record the certified value in the Bound column, and the limit in the Comments column.**  Many constructions produce both a value that a third party can recompute directly — an exact count at a given depth, say — and a larger limiting value obtained by extrapolation or by an asymptotic analysis of the same family.  Both are usually valid bounds, but the recorded value should be the one that can be checked by direct computation; state the limit, and the argument for it, in the comments.  If you submit such a construction, please give both numbers explicitly, and say which is which.
+- Give enough data in the Comments column for a reader to reproduce the number without downloading anything: the set, the parameters, the intermediate cardinalities.  Several entries in this repository have been checked, and one found not to reproduce, purely from what was recorded in that column.
 
 ## The constant numbering system
 
